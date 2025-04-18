@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vijay | Cybersecurity Analyst Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Back to Top Button -->
+<button id="backToTop" title="Back to top">↑</button>
+
+<!-- Dark/Light Theme Toggle -->
+<button id="themeToggle">Toggle Theme</button>
+
+<!-- Scripts -->
+<script>
+  // Back to Top Button Logic
+  const backToTop = document.getElementById('backToTop');
+  window.onscroll = function () {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      backToTop.style.display = "block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  };
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Dark/Light Theme Toggle Logic
+  const toggleBtn = document.getElementById('themeToggle');
+  toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    toggleBtn.innerText = document.body.classList.contains('light-mode') ? "Dark Mode" : "Light Mode";
+  });
+</script>
+
+
+<body>
+    <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="contact.html">Contact Card</a></li>
+        </ul>
+      </nav>
+      
+  <header class="main-header" id="home">
+    <div class="container">
+      <div class="profile-image">
+        <img src="assets/profile.jpg" alt="Vijay's Photo">
+      </div>
+      <div class="intro">
+        <h1>Vijay</h1>
+        <h2>Cybersecurity Analyst</h2>
+        <p>Cybersecurity enthusiast with experience in Microsoft Sentinel, Azure AD, Defender XDR, Splunk, email security, MITRE ATT&CK, and SOC analysis. Google, TCS, and LetsDefend certified. Former intern at CyberMSI with a strong foundation in threat detection and incident response.</p>
+        <a class="btn" href="#resume">Download Resume</a>
+        <a class="btn" href="contact.html">Contact Card</a>
+      </div>
+    </div>
+  </header>
+
+  
+
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a cybersecurity analyst passionate about securing systems and data. With hands-on experience in SOC operations, Microsoft Sentinel, Defender, Splunk, and Azure, I thrive in environments where continuous learning and investigation are key. I'm certified by top companies and committed to defending against real-world threats.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="experience-item">
+      <h3>Cybersecurity Analyst Intern - CyberMSI</h3>
+      <p><strong>Jan 2025 – Mar 2025</strong></p>
+      <ul>
+        <li>Worked in a managed SOC environment using Microsoft Sentinel and Defender XDR</li>
+        <li>Investigated alerts, performed triage, and created detection rules</li>
+        <li>Documented incidents and collaborated with senior analysts</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Home SOC Lab (Self-Project)</h3>
+      <p><strong>Nov 2024 – Present</strong></p>
+      <ul>
+        <li>Simulated real-world threats in lab setup using Sentinel and Splunk</li>
+        <li>Analyzed log data and mapped incidents to MITRE ATT&CK</li>
+        <li>Performed threat hunting and response drills</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Microsoft Sentinel & Defender XDR</li>
+        <li>Azure AD (Entra ID)</li>
+        <li>Splunk (SIEM)</li>
+        <li>MITRE ATT&CK Framework</li>
+        <li>Incident Response & Email Security</li>
+        <li>PowerShell & Linux Basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Home Lab SOC Simulation:</strong> Setup and analyzed simulated attacks using Sentinel and Splunk</li>
+        <li><strong>Plant Disease Detection:</strong> AI project using Python to detect diseases from plant images</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <p>Below are my verified certifications. You can upload more certificate images into the <code>assets/certifications</code> folder and they will automatically appear here.</p>
+      <div class="cert-grid">
+        <img src="assets/certifications/Google-cybersecurity-professional-certificate.png" alt="Google Cybersecurity Certificate">
+        <img src="assets/certifications/Cybersecurity-Analyst-Job-Simulation-TATA.png" alt="TCS Cybersecurity Certificate">
+        <img src="assets/certifications/SOC-Analyst-Path-LetsDefend.png" alt="LetsDefend Certificate">
+        <img src="assets/certifications/Security-Analyst-Certifiacte-Programme-SkillIndia.png" alt="Skill India Academy">
+        <!-- Add more <img> tags as you add images to the folder -->
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <a class="btn" href="assets/cybersecurity.analyst.resume.pdf" download>Download My Resume (PDF)</a>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <!-- Direct email contact link -->
+    <div class="email-contact">
+        <p>Feel free to reach out to me directly:</p>
+        <a href="mailto:vpawar4589@gmail.com" class="email-btn">
+          <i class="fas fa-envelope"></i> Email Me
+        </a>
+      </div>
+
+      <!-- You can keep your existing form or remove it -->
+      <form action="#" method="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <!-- Add this below your form -->
+      <div class="contact-alternatives">
+        <p>Or view my standalone <a href="contact.html">Contact Card</a> with direct contact options.</p>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>
