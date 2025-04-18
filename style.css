@@ -379,3 +379,29 @@ html {
   body.light-mode .email-btn:hover {
     background-color: #1e293b;
   }
+
+  .skills h3 {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: #38bdf8;
+    border-left: 4px solid #0ea5e9;
+    padding-left: 10px;
+  }
+  .skills ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .project-item {
+    margin-bottom: 2.5rem;
+  }
+  .project-item h3 {
+    color: #0ea5e9;
+    font-size: 1.4rem;
+  }
+  .project-item ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+  }
+  
